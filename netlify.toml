@@ -2,12 +2,20 @@
   command = "npm run build"
   publish = ".next"
 
-[dev]
-  command = "next dev"
-  targetPort = 3000
-  port = 8888
+[build.environment]
+  NODE_ENV = "production"
+
+[functions]
+  directory = "app/api"
+  directory = "app/lib"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    
