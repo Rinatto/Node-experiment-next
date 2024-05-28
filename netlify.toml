@@ -6,7 +6,6 @@
   NODE_ENV = "production"
 
 [functions]
-  directory = "app/api"
   directory = "app/lib"
 
 [[redirects]]
