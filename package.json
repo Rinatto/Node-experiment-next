@@ -4,8 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "lint": "next lint",
     "test:ts": "ts-node app/lib/ts/testDynamicStructureChange.ts",
     "test:js": "node app/lib/js/testDynamicStructureChange.js"
