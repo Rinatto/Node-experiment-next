@@ -1,0 +1,32 @@
+{
+  "name": "web-experiment-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "start": "next start",
+    "lint": "next lint",
+    "test:ts": "ts-node app/lib/ts/testDynamicStructureChange.ts",
+    "test:js": "node app/lib/js/testDynamicStructureChange.js"
+  },
+  "dependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^20.12.12",
+    "chart.js": "^4.4.3",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.18.0",
+    "@babel/preset-typescript": "^7.18.0",
+    "@types/react": "18.3.3",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

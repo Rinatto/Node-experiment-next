@@ -1,0 +1,34 @@
+[
+  {
+    "label": "test:ts",
+    "output": "> web-experiment-next@0.1.0 test:ts\n> ts-node app/lib/ts/testDynamicStructureChange.ts\n\nTS Dynamic Structure Change: 7.352ms"
+  },
+  {
+    "label": "test:js",
+    "output": "> web-experiment-next@0.1.0 test:js\n> node app/lib/js/testDynamicStructureChange.js\n\nDynamic Structure Change: 19.72ms"
+  },
+  {
+    "label": "test:ts",
+    "output": "> web-experiment-next@0.1.0 test:ts\n> ts-node app/lib/ts/testDynamicStructureChange.ts\n\nTS Dynamic Structure Change: 9.762ms"
+  },
+  {
+    "label": "test:js",
+    "output": "> web-experiment-next@0.1.0 test:js\n> node app/lib/js/testDynamicStructureChange.js\n\nDynamic Structure Change: 24.417ms"
+  },
+  {
+    "label": "test:ts",
+    "output": "> web-experiment-next@0.1.0 test:ts\n> ts-node app/lib/ts/testDynamicStructureChange.ts\n\nTS Dynamic Structure Change: 9.483ms"
+  },
+  {
+    "label": "test:js",
+    "output": "> web-experiment-next@0.1.0 test:js\n> node app/lib/js/testDynamicStructureChange.js\n\nDynamic Structure Change: 21.684ms"
+  },
+  {
+    "label": "test:ts",
+    "output": "> web-experiment-next@0.1.0 test:ts\n> ts-node app/lib/ts/testDynamicStructureChange.ts\n\nTS Dynamic Structure Change: 10.916ms"
+  },
+  {
+    "label": "test:js",
+    "output": "> web-experiment-next@0.1.0 test:js\n> node app/lib/js/testDynamicStructureChange.js\n\nDynamic Structure Change: 23.367ms"
+  }
+]
