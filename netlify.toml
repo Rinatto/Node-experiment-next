@@ -1,0 +1,11 @@
+[build]
+  publish = "out"
+  command = "npm run build && npm run export"
+
+[functions]
+  directory = "app/api"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
