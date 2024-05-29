@@ -1,11 +1,11 @@
-// const runExperiments = require('./runExperiments');
+const runExperiments = require('./runExperiments');
 
-// async function runExperimentsHandler(iterations) {
-//     return new Promise((resolve, reject) => {
-//         runExperiments(iterations)
-//             .then(results => resolve(results))
-//             .catch(error => reject(error));
-//     });
-// }
+async function runExperimentsHandler(iterations) {
+    return new Promise((resolve, reject) => {
+        runExperiments(iterations)
+            .then(results => resolve(results))
+            .catch(error => reject(error));
+    });
+}
 
-// module.exports = runExperimentsHandler;
+module.exports = runExperimentsHandler;

@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-const runExperimentsHandler = require('@/app/api/handler');
+const runExperimentsHandler = require('@/app/lib/runExperimentsHandler');
 
 export async function POST(req) {
     try {
