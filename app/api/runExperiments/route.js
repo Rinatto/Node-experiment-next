@@ -1,6 +1,6 @@
-const { exec } = require('child_process');
-const { writeFileSync } = require('fs');
-const { resolve } = require('path');
+import { exec } from 'child_process';
+import { writeFileSync } from 'fs';
+import { resolve } from 'path';
 
 function runExperiments(iterations) {
     return new Promise((resolvePromise, rejectPromise) => {
@@ -40,5 +40,5 @@ function runExperiments(iterations) {
     });
 }
 
-module.exports = runExperiments;
+export default runExperiments;
 

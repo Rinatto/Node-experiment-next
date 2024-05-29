@@ -1,4 +1,4 @@
-const runExperiments = require('@/app/api/runExperiments/route');
+import runExperiments from '@/app/api/runExperiments/route';
 
 async function runExperimentsHandler(iterations) {
     return new Promise((resolve, reject) => {
@@ -8,4 +8,4 @@ async function runExperimentsHandler(iterations) {
     });
 }
 
-module.exports = runExperimentsHandler;
+export default runExperimentsHandler;
