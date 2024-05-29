@@ -26,8 +26,8 @@ function runExperiments(iterations) {
         const runTests = async () => {
             for (let i = 0; i < runCount; i++) {
                 console.log(`Running iteration ${i + 1} of ${runCount}`);
-        await runTest('ts-node ./app/lib/ts/testDynamicStructureChange.ts', 'test:ts');
-        await runTest('node ./app/lib/js/testDynamicStructureChange.js', 'test:js');
+                await runTest('npm run test:ts', 'test:ts');
+                await runTest('npm run test:js', 'test:js');
     }
 
             writeFileSync(resolve(__dirname, 'results.json'), JSON.stringify(results, null, 2));
