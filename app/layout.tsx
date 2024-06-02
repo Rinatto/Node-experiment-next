@@ -1,4 +1,5 @@
 import Navigation from './components/Navigation';
+import './styles/global.css';
 
 export const metadata = {
   title: 'Experiment Node',

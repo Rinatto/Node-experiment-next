@@ -133,28 +133,38 @@ export default function Home() {
 
   return (
     <main>
-      <div>
-        <h1>Run Experiment</h1>
-        <input
-          type="number"
-          value={iterations}
-          onChange={(e) => setIterations(e.target.value)}
-          min="1"
-          max="10"
-        />
-        <button onClick={runExperiment} disabled={loading}>
-          {loading ? 'Running...' : 'Run Experiment'}
-        </button>
-        {data ? (
-          <div>
-            <pre>{JSON.stringify(data.iterations, null, 2)}</pre>
-            <canvas ref={canvasRef} id="resultsChart" width="600" height="400"></canvas>
-          </div>
-        ) : (
-          <p>No data yet. Please run the experiment.</p>
-        )}
-      </div>
-    </main>
-  );
-}
+        
+            <h1>Экспериментальный стенд в среде Node.js</h1>
+            <div className="experiment-info">
+                <p>Данный эксперимент исследует различия в производительности между динамической типизацией в JavaScript и статической типизацией в TypeScript на примере создания и модификации объектов. 
+                В эксперименте используются два сценария, каждый из которых создаёт 100,000 экземпляров класса Animal, добавляя каждому десятому объекту новое свойство newProperty.</p>
+                <p>Цель эксперимента — сравнить производительность динамической типизации в JavaScript и статической типизации в TypeScript при операциях с большим количеством объектов. 
 
+Ожидается, что TypeScript покажет лучшую производительность за счёт предварительной оптимизации структур данных движком V8, который лучше работает с известными и неизменяемыми структурами данных.
+Данный эксперимент показывает, как различия в типизации могут влиять на производительность приложений, особенно в сценариях с интенсивной обработкой данных. 
+</p>
+            
+            <label htmlFor="iterations">Введите количество итераций</label>
+            <input
+                id="iterations"
+                type="number"
+                value={iterations}
+                onChange={(e) => setIterations(e.target.value)}
+                min="1"
+                max="10"
+            />
+            <button onClick={runExperiment} disabled={loading}>
+                {loading ? 'Загрузка...' : 'Запустить эксперимент'}
+            </button>
+            {data ? (
+                <div className="results">
+                    <pre>{JSON.stringify(data.iterations, null, 2)}</pre>
+                    <canvas ref={canvasRef} id="resultsChart" width="600" height="400"></canvas>
+                </div>
+            ) : (
+                <p>Данных пока нет. Пожалуйста, проведите эксперимент.</p>
+            )}
+        </div>
+    </main>
+);
+}
