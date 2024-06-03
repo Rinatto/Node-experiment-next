@@ -5,8 +5,8 @@ export async function POST(req) {
     try {
         const { iterations } = await req.json();
 
-        if (iterations > 10) {
-            return NextResponse.json({ error: 'Maximum number of iterations is 10' }, { status: 400 });
+        if (iterations > 51) {
+            return NextResponse.json({ error: 'Maximum number of iterations is 51' }, { status: 400 });
         }
 
         const results = await runExperimentsHandler(iterations);

@@ -144,7 +144,7 @@ export default function Home() {
 Данный эксперимент показывает, как различия в типизации могут влиять на производительность приложений, особенно в сценариях с интенсивной обработкой данных. 
 </p>
             
-            <label htmlFor="iterations">Введите количество итераций</label>
+            <label htmlFor="iterations">Введите количество итераций (не более 50)</label>
             <input
                 id="iterations"
                 type="number"
